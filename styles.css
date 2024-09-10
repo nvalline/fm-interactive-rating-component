@@ -1,0 +1,87 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove Default Spacing */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+:root {
+  --clr-primary-orange: hsl(25, 97%, 53%);
+  --clr-shades-very-dark-blue: hsl(216, 12%, 8%);
+  --clr-shades-dark-blue: hsl(213, 19%, 18%);
+  --clr-shades-light-gray: hsl(217, 12%, 63%);
+  --clr-shades-pure-white: hsl(0, 0%, 100%);
+  --clr-gradients-light-black: hsl(215, 20%, 17%);
+  --clr-gradients-dark-black: hsl(216, 24%, 12%);
+  --clr-gradients-black-radial: radial-gradient(hsl(215, 20%, 17%), hsl(216, 24%, 12%));
+  --ff-primary-overpass: 'Overpass', sans-serif;
+  --fs-body-md: 0.9375rem;
+  --fs-heading-lg: 1.75rem;
+  --fs-heading-md: 0.9375rem;
+  --fs-rating-md: 1rem;
+  --fw-bold: 700;
+  --fw-regular: 400;
+  --ls-heading-md: 2px;
+  --ls-rating-md: 0.2px;
+  --lh-body-md: 24px;
+  --lh-rating-md: 24px;
+}
+
+body {
+  background: var(--clr-shades-very-dark-blue);
+}/*# sourceMappingURL=styles.css.map */

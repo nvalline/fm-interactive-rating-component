@@ -1,0 +1,46 @@
+@use './colors' as *;
+@use './type' as *;
+
+// ----- Root -----
+
+:root {
+	// Loop to declare color variables
+	@each $color-type, $shade in $colors {
+		@each $color, $value in $shade {
+			--clr-#{$color-type}-#{$color}: #{$value};
+		}
+	}
+
+	// Loop to declare font-family variables
+	@each $font-type, $type in $font-families {
+		@each $font, $value in $type {
+			--ff-#{$font-type}-#{$font}: #{$value};
+		}
+	}
+
+	// Loop to declare font-size variables
+	@each $font-type, $type in $font-sizes {
+		@each $size, $value in $type {
+			--fs-#{$font-type}-#{$size}: #{$value};
+		}
+	}
+
+	// Loop to declare font-weight variables
+	@each $font-weight, $value in $font-weights {
+		--fw-#{$font-weight}: #{$value};
+	}
+
+	// Loop to declare letter-spacing variables
+	@each $font-type, $type in $letter-spacings {
+		@each $spacing, $value in $type {
+			--ls-#{$font-type}-#{$spacing}: #{$value};
+		}
+	}
+
+	// Loop to declare line-height variables
+	@each $font-type, $type in $line-heights {
+		@each $height, $value in $type {
+			--lh-#{$font-type}-#{$height}: #{$value};
+		}
+	}
+}

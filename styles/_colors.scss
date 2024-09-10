@@ -1,0 +1,18 @@
+// ----- Colors -----
+
+$colors: (
+	primary: (
+		'orange': hsl(25, 97%, 53%)
+	),
+	shades: (
+		'very-dark-blue': hsl(216, 12%, 8%),
+		'dark-blue': hsl(213, 19%, 18%),
+		'light-gray': hsl(217, 12%, 63%),
+		'pure-white': hsl(0, 0%, 100%)
+	),
+	gradients: (
+		'light-black': hsl(215, 20%, 17%),
+		'dark-black': hsl(216, 24%, 12%),
+		'black-radial': radial-gradient(hsl(215, 20%, 17%), hsl(216, 24%, 12%))
+	)
+);

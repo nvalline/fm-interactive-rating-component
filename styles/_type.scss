@@ -1,0 +1,43 @@
+// ----- Typography -----
+
+$font-families: (
+	primary: (
+		'overpass': "'Overpass', sans-serif"
+	)
+);
+
+$font-sizes: (
+	body: (
+		'md': 0.9375rem
+	),
+	heading: (
+		'lg': 1.75rem,
+		'md': 0.9375rem
+	),
+	rating: (
+		'md': 1rem
+	)
+);
+
+$font-weights: (
+	'bold': 700,
+	'regular': 400
+);
+
+$letter-spacings: (
+	heading: (
+		'md': 2px
+	),
+	rating: (
+		'md': 0.2px
+	)
+);
+
+$line-heights: (
+	body: (
+		'md': 24px
+	),
+	rating: (
+		'md': 24px
+	)
+);
