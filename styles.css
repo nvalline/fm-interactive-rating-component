@@ -71,17 +71,65 @@ button {
   --clr-gradients-black-radial: radial-gradient(hsl(215, 20%, 17%), hsl(216, 24%, 12%));
   --ff-primary-overpass: 'Overpass', sans-serif;
   --fs-body-md: 0.9375rem;
+  --fs-body-sm: 0.875rem;
   --fs-heading-lg: 1.75rem;
-  --fs-heading-md: 0.9375rem;
+  --fs-heading-md: 1.5rem;
+  --fs-heading-sm: 0.9375rem;
   --fs-rating-md: 1rem;
   --fw-bold: 700;
   --fw-regular: 400;
   --ls-heading-md: 2px;
   --ls-rating-md: 0.2px;
   --lh-body-md: 24px;
+  --lh-body-sm: 22px;
+  --lh-heading-md: 1.25;
   --lh-rating-md: 24px;
 }
 
 body {
   background: var(--clr-shades-very-dark-blue);
+  font-family: var(--ff-primary-overpass);
+}
+body main {
+  height: 100vh;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .card {
+  padding: 1.5rem 1.5rem 2rem;
+  background: var(--clr-gradients-black-radial);
+  border-radius: 15px;
+}
+body main .card header {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+body main .card header .star {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--clr-shades-dark-blue);
+  border-radius: 100%;
+}
+body main .card header .star img {
+  height: 13.33px;
+  width: 13.96px;
+}
+body main .card header h1 {
+  font-size: var(--fs-heading-md);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-heading-md);
+  color: var(--clr-shades-pure-white);
+}
+body main .card header p {
+  font-size: var(--fs-body-sm);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-body-sm);
+  color: var(--clr-shades-light-gray);
 }/*# sourceMappingURL=styles.css.map */

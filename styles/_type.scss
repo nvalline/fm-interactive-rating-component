@@ -8,11 +8,13 @@ $font-families: (
 
 $font-sizes: (
 	body: (
-		'md': 0.9375rem
+		'md': 0.9375rem,
+		'sm': 0.875rem
 	),
 	heading: (
 		'lg': 1.75rem,
-		'md': 0.9375rem
+		'md': 1.5rem,
+		'sm': 0.9375rem
 	),
 	rating: (
 		'md': 1rem
@@ -35,7 +37,11 @@ $letter-spacings: (
 
 $line-heights: (
 	body: (
-		'md': 24px
+		'md': 24px,
+		'sm': 22px
+	),
+	heading: (
+		'md': 1.25
 	),
 	rating: (
 		'md': 24px
