@@ -27,6 +27,9 @@ $font-weights: (
 );
 
 $letter-spacings: (
+	body: (
+		'sm': 0.01094rem
+	),
 	heading: (
 		'md': 2px
 	),
@@ -37,7 +40,7 @@ $letter-spacings: (
 
 $line-heights: (
 	body: (
-		'md': 24px,
+		'md': 1.5rem,
 		'sm': 22px
 	),
 	heading: (

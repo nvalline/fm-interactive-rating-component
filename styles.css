@@ -78,9 +78,10 @@ button {
   --fs-rating-md: 1rem;
   --fw-bold: 700;
   --fw-regular: 400;
+  --ls-body-sm: 0.01094rem;
   --ls-heading-md: 2px;
   --ls-rating-md: 0.2px;
-  --lh-body-md: 24px;
+  --lh-body-md: 1.5rem;
   --lh-body-sm: 22px;
   --lh-heading-md: 1.25;
   --lh-rating-md: 24px;
@@ -132,4 +133,58 @@ body main .card header p {
   font-weight: var(--fw-regular);
   line-height: var(--lh-body-sm);
   color: var(--clr-shades-light-gray);
+}
+body main .card form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+body main .card form .ratings {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body main .card form .ratings label {
+  position: relative;
+  height: 42px;
+  width: 42px;
+  background-color: var(--clr-shades-dark-blue);
+  border-radius: 100%;
+}
+body main .card form .ratings label input[type=radio] {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+body main .card form .ratings label input[type=radio]:not(:disabled):checked {
+  background-color: var(--clr-shades-pure-white);
+  background-clip: content-box;
+}
+body main .card form .ratings label span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-46%, -43%);
+  font-size: var(--fs-body-sm);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-body-md);
+  color: var(--clr-shades-light-gray);
+}
+body main .card form .ratings label:hover,
+body main .card form .ratings label input:hover {
+  background-color: var(--clr-primary-orange);
+  cursor: pointer;
+}
+body main .card form .ratings label:hover > span,
+body main .card form .ratings label input:hover > span {
+  color: var(--clr-shades-dark-blue);
+  cursor: pointer;
+}
+body main .card form .ratings label:has(:checked) > span {
+  color: var(--clr-shades-dark-blue);
 }/*# sourceMappingURL=styles.css.map */
