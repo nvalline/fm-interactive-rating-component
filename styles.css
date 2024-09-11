@@ -34,7 +34,6 @@ h1,
 h2,
 h3,
 h4,
-button,
 input,
 label {
   line-height: 1;
@@ -100,6 +99,7 @@ body main {
 }
 body main .card {
   padding: 1.5rem 1.5rem 2rem;
+  max-width: 412px;
   background: var(--clr-gradients-black-radial);
   border-radius: 15px;
 }
@@ -152,6 +152,7 @@ body main .card form .ratings label {
   width: 42px;
   background-color: var(--clr-shades-dark-blue);
   border-radius: 100%;
+  transition: all 300ms ease-in;
 }
 body main .card form .ratings label input[type=radio] {
   height: 100%;
@@ -174,6 +175,7 @@ body main .card form .ratings label span {
   font-weight: var(--fw-bold);
   line-height: var(--lh-body-md);
   color: var(--clr-shades-light-gray);
+  transition: all 300ms ease-in;
 }
 body main .card form .ratings label:hover,
 body main .card form .ratings label input:hover {
@@ -187,4 +189,21 @@ body main .card form .ratings label input:hover > span {
 }
 body main .card form .ratings label:has(:checked) > span {
   color: var(--clr-shades-dark-blue);
+}
+body main .card form button {
+  width: 100%;
+  padding: 0.875rem;
+  background-color: var(--clr-primary-orange);
+  border: none;
+  border-radius: 22.5px;
+  font-size: var(--fs-body-sm);
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.11669rem;
+  color: var(--clr-shades-very-dark-blue);
+  text-transform: uppercase;
+  transition: all 300ms ease-in;
+}
+body main .card form button:hover {
+  background-color: var(--clr-shades-pure-white);
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
