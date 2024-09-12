@@ -17,6 +17,10 @@ body {
 			background: var(--clr-gradients-black-radial);
 			border-radius: 15px;
 
+			@media (min-width: 768px) {
+				padding: 2rem;
+			}
+
 			header {
 				margin-bottom: 1.5rem;
 				display: flex;
@@ -32,9 +36,20 @@ body {
 					background-color: var(--clr-shades-dark-blue);
 					border-radius: 100%;
 
+					@media (min-width: 768px) {
+						height: 48px;
+						width: 48px;
+						margin-bottom: 0.875rem;
+					}
+
 					img {
 						height: 13.33px;
 						width: 13.96px;
+
+						@media (min-width: 768px) {
+							height: 16px;
+							width: 16.75px;
+						}
 					}
 				}
 
@@ -43,6 +58,10 @@ body {
 					font-weight: var(--fw-bold);
 					line-height: var(--lh-heading-md);
 					color: var(--clr-shades-pure-white);
+
+					@media (min-width: 768px) {
+						font-size: var(--fs-heading-lg);
+					}
 				}
 
 				p {
@@ -50,6 +69,11 @@ body {
 					font-weight: var(--fw-regular);
 					line-height: var(--lh-body-sm);
 					color: var(--clr-shades-light-gray);
+
+					@media (min-width: 768px) {
+						font-size: var(--fs-body-md);
+						line-height: var(--lh-body-md);
+					}
 				}
 			}
 
@@ -58,6 +82,10 @@ body {
 				display: flex;
 				flex-direction: column;
 				gap: 1.5rem;
+
+				@media (min-width: 768px) {
+					gap: 2rem;
+				}
 
 				.ratings {
 					width: 100%;
@@ -72,6 +100,11 @@ body {
 						background-color: var(--clr-shades-dark-blue);
 						border-radius: 100%;
 						transition: all 300ms ease-in;
+
+						@media (min-width: 768px) {
+							height: 51px;
+							width: 51px;
+						}
 
 						input[type='radio'] {
 							height: 100%;
@@ -95,6 +128,10 @@ body {
 							line-height: var(--lh-body-md);
 							color: var(--clr-shades-light-gray);
 							transition: all 300ms ease-in;
+
+							@media (min-width: 768px) {
+								font-size: var(--fs-rating-md);
+							}
 						}
 
 						&:hover,
