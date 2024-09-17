@@ -255,6 +255,11 @@ body main .card form button:hover {
 body main .thank-you {
   padding: 2.125rem 1.5rem 2.3125rem;
 }
+@media (min-width: 768px) {
+  body main .thank-you {
+    padding: 2.8125rem 2.25rem;
+  }
+}
 body main .thank-you header {
   display: flex;
   flex-direction: column;
@@ -262,14 +267,30 @@ body main .thank-you header {
   justify-content: space-between;
   gap: 1.5rem;
 }
+@media (min-width: 768px) {
+  body main .thank-you header {
+    gap: 2rem;
+  }
+}
 body main .thank-you header img {
   height: 96px;
   width: 144px;
+}
+@media (min-width: 768px) {
+  body main .thank-you header img {
+    height: 108px;
+    width: 162px;
+  }
 }
 body main .thank-you header div {
   padding: 0.3125rem 0.75rem;
   background-color: var(--clr-shades-dark-blue);
   border-radius: 22.5px;
+}
+@media (min-width: 768px) {
+  body main .thank-you header div {
+    padding: 0.3125rem 1.25rem;
+  }
 }
 body main .thank-you header div p {
   font-size: var(--fs-body-sm);
@@ -277,6 +298,12 @@ body main .thank-you header div p {
   line-height: var(--lh-body-sm);
   letter-spacing: 0.00555rem;
   color: var(--clr-primary-orange);
+}
+@media (min-width: 768px) {
+  body main .thank-you header div p {
+    font-size: var(--fs-body-md);
+    line-height: var(--lh-body-md);
+  }
 }
 body main .thank-you .content {
   display: flex;
@@ -290,10 +317,21 @@ body main .thank-you .content h1 {
   line-height: normal;
   color: var(--clr-shades-pure-white);
 }
+@media (min-width: 768px) {
+  body main .thank-you .content h1 {
+    font-size: var(--fs-heading-lg);
+  }
+}
 body main .thank-you .content p {
   font-size: var(--fs-body-sm);
   font-weight: var(--fw-regular);
   line-height: var(--lh-body-sm);
   color: var(--clr-shades-light-gray);
   text-align: center;
+}
+@media (min-width: 768px) {
+  body main .thank-you .content p {
+    font-size: var(--fs-body-md);
+    line-height: var(--lh-body-md);
+  }
 }/*# sourceMappingURL=styles.css.map */
