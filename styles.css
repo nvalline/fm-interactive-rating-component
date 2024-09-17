@@ -277,4 +277,23 @@ body main .thank-you header div p {
   line-height: var(--lh-body-sm);
   letter-spacing: 0.00555rem;
   color: var(--clr-primary-orange);
+}
+body main .thank-you .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+body main .thank-you .content h1 {
+  font-size: var(--fs-heading-md);
+  font-weight: var(--fw-bold);
+  line-height: normal;
+  color: var(--clr-shades-pure-white);
+}
+body main .thank-you .content p {
+  font-size: var(--fs-body-sm);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-body-sm);
+  color: var(--clr-shades-light-gray);
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */

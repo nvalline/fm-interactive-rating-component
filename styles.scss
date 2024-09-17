@@ -203,6 +203,28 @@ body {
 					}
 				}
 			}
+
+			.content {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				gap: 1rem;
+
+				h1 {
+					font-size: var(--fs-heading-md);
+					font-weight: var(--fw-bold);
+					line-height: normal;
+					color: var(--clr-shades-pure-white);
+				}
+
+				p {
+					font-size: var(--fs-body-sm);
+					font-weight: var(--fw-regular);
+					line-height: var(--lh-body-sm);
+					color: var(--clr-shades-light-gray);
+					text-align: center;
+				}
+			}
 		}
 	}
 }
