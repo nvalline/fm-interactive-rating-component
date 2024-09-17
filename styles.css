@@ -251,4 +251,30 @@ body main .card form button {
 body main .card form button:hover {
   background-color: var(--clr-shades-pure-white);
   cursor: pointer;
+}
+body main .thank-you {
+  padding: 2.125rem 1.5rem 2.3125rem;
+}
+body main .thank-you header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+body main .thank-you header img {
+  height: 96px;
+  width: 144px;
+}
+body main .thank-you header div {
+  padding: 0.3125rem 0.75rem;
+  background-color: var(--clr-shades-dark-blue);
+  border-radius: 22.5px;
+}
+body main .thank-you header div p {
+  font-size: var(--fs-body-sm);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-body-sm);
+  letter-spacing: 0.00555rem;
+  color: var(--clr-primary-orange);
 }/*# sourceMappingURL=styles.css.map */
