@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Here](https://www.frontendmentor.io/solutions/semantic-html-sass-and-typescript-jtorlGzLTr)
 - Live Site URL: [Here](https://nv-interactive-rating-component.netlify.app/)
 
 ## My process
